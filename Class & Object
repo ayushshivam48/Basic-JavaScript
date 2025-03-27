@@ -1,0 +1,99 @@
+// const employee={    ///////
+//     calcTax(){
+//         console.log("tax rate is 10%");
+//     },
+// };
+
+// const karanArjun={
+//     salary: 50000,
+// };
+
+// const karanArjun1={
+//     salary: 60000,
+//     calcTax(){
+//         console.log("tax rate is 20%");
+//     },
+// };
+
+// const karanArjun2={
+//     salary: 40000,
+// };
+
+// karanArjun.__proto__=employee;
+// karanArjun1.__proto__=employee;
+// karanArjun2.__proto__=employee;
+
+
+
+// class ToyotaCar {  /////
+//     constructor(brand,mileage){
+//         console.log("creating new objects");
+//         this.brand=brand;
+//         this.mileage=mileage;
+//     }
+
+//     start(){
+//         console.log("start");
+//     }
+
+//     stop(){
+//         console.log("stop");
+//     }
+
+//     // setBrand(brand){
+//     //     this.brandName=brand;
+//     // }
+// }
+
+// let fortuner = new ToyotaCar("fortuner",10);
+// console.log(fortuner);
+// // fortuner.setBrand("fortuner");
+
+
+
+class Person {
+
+    constructor(name){
+        this.species="Homo-sapiens";
+        this.name=name;
+    }
+
+    eat(){
+        console.log("eat");
+    }
+
+    sleep(){
+        console.log("sleep");
+    }
+
+    work(){
+        console.log("do nothing");
+    }
+}
+
+class Engineer extends Person{
+
+    constructor(name){
+        super(name);
+    }
+
+    work(){
+        super.eat();
+        console.log("solve problem, build something");
+    }
+};
+
+class Doctor extends Person{
+
+    constructor(name){
+        super(name);
+    }
+
+    work(){
+        console.log("treat patients");
+    }
+};
+
+let Engg = new Engineer("Ayush Shivam");
+
+let Doc = new Doctor("Diksha");
