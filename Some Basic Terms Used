@@ -1,1 +1,184 @@
+console.log("Ayush Shivam"); //directly print
+const fullName="Ayush Shivam";  //const no value is added or updated.
+let age=20;
+let bankbalance=2000.26
+let x=null;
+let y=undefined;
+let isFollow=true;  //let where value is updated or changed.
+    isFollow=false;
+let z;  //let can either be declared or not but const always be.
+console.log(fullName);
+console.log(age);
+console.log(bankbalance);
+console.log(x);
+console.log(y);
+console.log(isFollow);
+console.log(z);
+
+//here "{}" is a block ,if we use another block we can declare same variable with different value
+{
+    let a=10
+    console.log(a);
+}
+{
+    let a=90
+    console.log(a);
+}
+
+
+//here student is placed as a object.
+const student={
+    fullName:"Ayush Shivam",
+    age:19,
+    cgpa:8.1,
+    isPass:true,
+};
+student.age=student.age+1;
+console.log(student);
+
+//Arithmetic operators
+let a=5;
+let b="5";
+console.log("a + b =",a+b);
+
+//Assignment operator
+console.log(a+=1);  //now a=6
+console.log(a%=b); //reminder becomes 1.
+
+//Comparsion operator
+console.log("a==b",a==b); //here string is converted into no then perform
+console.log("a===b",a===b); //here a and b are strictly checked along with value and data type
+
+//Logical operators
+// let cond1 = a<b;
+// let cond2 = a===1;
+console.log(a<b && a===1);
+console.log(!(a<b));
+
+//Conditional statement
+if(age>=18){
+    console.log("You can vote");
+}
+if(age<18){
+    console.log("You can't vote");
+}
+
+if(age>=18){
+    console.log("You can vote");
+}else{
+    console.log("You can't vote");
+}
+
+if(age=18){
+    console.log("You can vote");
+}else if(age>18){
+    console.log("You can vote");
+}else{
+    console.log("You can't vote");
+}
+
+//Ternary operator
+let result=(age>=18?"adult":"not adult");
+console.log(result);
+//or
+(age>=18?console.log("adult"):console.log("not adult"));
+
+//for loop
+let sum=0;
+let n=10;
+for(let i=1;i<=n;i++){
+    sum+=i;
+}
+console.log("sum=",sum);
+
+//while loop
+//here sum is already 55
+let i=1;
+while(i<=10){
+    sum+=i;
+    i++;
+}
+console.log("sum=",sum);
+
+//do-while loop
+let j=20;
+do{
+    console.log("a");
+    j++;
+}while(j<=10)
+
+// for-of loop
+let str="  ayush shivam  "
+let size=0;
+for(let i of str){
+    console.log("i=",i);
+    size++;
+}
+console.log(size);
+
+//for-in loop
+let student1={
+    name:"Ayush",
+    age:20,
+    isPass:true,
+};
+for(let i in student1){
+    console.log(i);
+}
+
+//Tamplate Literals
+let specialString = `ayush shivam ${1+2+6}`;
+console.log(specialString)
+
+let obj={
+    item:"Pen",
+    price:10,
+};
+let output = `the cost of ${obj.item} is ${obj.price} rupees`;
+console.log(output);
+
+//string
+let newStr=str.toUpperCase();
+console.log(str);
+console.log(newStr);
+console.log(str.trim());//remove space from start and end
+
+let str1="012345678";
+console.log(str1.slice(1,6));
+console.log(str.concat(str1));
+console.log(str1.replace(8,9));
+console.log(str.charAt(8));
+
+//Arrays
+let marks1=[97, 82, 75, 64, 36];
+console.log(marks1);
+
+for(let idx=0;idx<marks1.length;idx++){
+    console.log(marks1[idx]);
+}
+
+for(let marks of marks1){
+    console.log(marks);
+}
+
+
+
+//Function
+function AS(){
+    console.log("hii guys!!");
+    console.log("learning JS");
+}
+AS();
+
+function SS(msg ,n){
+    console.log(msg,n);
+}
+SS("ayush shivam",48)
+
+
+//forEach function
+let arr=[1,2,3,4,5];
+arr.forEach((val)=>{
+    console.log(val);
+});
 
