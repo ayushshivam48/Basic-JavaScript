@@ -1,1 +1,132 @@
+// const product={     /////
+//     product:"Pen",
+//     rating:4,
+//     offer:5,
+//     price:270,
+// };
+// console.log(product);
 
+
+// const profile={      //////
+//     username:"@ayushshivam",
+//     isFollow:false,
+//     followers:56,
+//     following:56,
+// };
+// console.log(profile);
+
+// let num=prompt("Enter a no:");    /////
+// if(num%5===0){
+//     console.log(num,"is a multiple of 5");
+// }else{
+//     console.log(num,"isn't a multiple of 5");
+// }
+
+// let score=prompt("Enter score:");     /////
+// let grade;
+// if(score<=100&&score>=90){
+//     grade="A";
+// }else if(score<=89&&score>=70){
+//     grade="B";
+// }else if(score<=69&&score>=60){
+//     grade="C";
+// }else if(score<=59&&score>=50){
+//     grade="D";
+// }else{
+//     grade="F";
+// }
+// console.log("grade:",grade);
+
+// let gameNum=25;    ///////
+// let userNum=prompt("Guess the game number:");
+// while(userNum!=gameNum){
+//     userNum=prompt("You guess the wrong number.Guess again:");
+// }
+// console.log("congratulations,you guess the right number");
+
+
+// let fullName1=prompt("Enter the fullname without spaces");  /////
+// let username1="@"+fullName1+fullName1.length;
+// console.log(username1);
+
+// let marks=[85, 97, 44, 37, 76, 60];   ///
+// let sum=0;
+// let n = marks.length;
+// let idx =0;
+// while(idx<n){
+//     sum+=marks[idx];
+//     idx++;
+// }
+// console.log("avg of marks=",sum/n);
+
+// let items=[250, 645, 300, 900, 50];   ///
+// let idx1 = 0;
+// for(let val of items){
+//     console.log(`Value at index ${idx1}=${val}`);
+//     let offer = val/10;
+//     items[idx1]=items[idx1]-offer;
+//     console.log(`Value after offer=${items[idx1]}`);
+//     idx1++;
+// }
+
+// let companies=["bloomberg","microsoft","uber","google","IBM","netflix"];    /////
+// arr.shift(0);
+// companies.splice(2,1,"ola");
+// companies.push("amazon");
+
+// function countVowels(str){  ////
+//     let count=0;
+//     for(const char of str){
+//         if(char==="a"||char==="e"||char==="i"||char==="o"||char==="u"||char==="A"||char==="E"||char==="I"||char==="O"||char==="U"){
+//             count++;
+//         }
+//     }console.log(count);
+// }
+
+// const countVow=(str)=>{  ////
+//     let count=0;
+//     for(const char of str){
+//         if(char==="a"||char==="e"||char==="i"||char==="o"||char==="u"||char==="A"||char==="E"||char==="I"||char==="O"||char==="U"){
+//             count++;
+//         }
+//     }console.log(count);
+// }
+
+// let arr=[1,2,3,4,5];   ////
+// arr.forEach((val)=>{
+//     console.log(val**2);
+// });
+
+// let nums=[11,22,33,44,55];   ////
+// let newArr=nums.map((val)=>{
+//     return val**2;
+// });
+// console.log(newArr);
+
+// let nums=[11,22,33,44,55];   ////
+// let newArr=nums.filter((val)=>{
+//     return val%2===0;
+// });
+// console.log(newArr);
+
+// let arr1=[1,2,3,4];    /////
+// const output=arr1.reduce((res,curr)=>{
+//     return res+curr;
+// });
+// console.log(output);
+
+// let n=prompt("enter a no:");   ///
+// let arr2=[];
+// for(let i=1;i<=n;i++){
+//     arr2[i-1]=i;
+// }
+// console.log(arr2);
+// let sum=arr2.reduce((res,curr)=>{
+//     return res+curr;
+// });
+// console.log("sum",sum);
+
+// let factorial=arr2.reduce((res,curr)=>{
+//     return res*curr;
+// });
+// console.log("factorial",factorial);
