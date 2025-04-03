@@ -1,1 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
 
+    </style>
+</head>
+<body>
+        <!-- <h2>Hello JS.</h2>
+        <div class="box">1 div</div>
+        <div class="box">2 div</div>
+        <div class="box">3 div</div> -->
+        <!-- <div id="box">this is a div.  
+            <ul>Lists
+                <li>list1</li>
+                <li>list2</li>
+                <li>list3</li>
+            </ul>
+        </div>
+        <p class="para">this is a single line</p> -->
+
+        <p class="content">paragraph</p>
+    <script>
+
+    </script>
+</body>
+</html>
